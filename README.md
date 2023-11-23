@@ -15,8 +15,8 @@ This is a sample Spring Boot project that demonstrates the integration of Kafka 
     - [Kafka Producer](#kafka-producer)
     - [Kafka Topics](#kafka-topics)
     - [Partitions](#partitions)
-    - [Consumer Groups](#consumer-groups)
     - [Offsets](#offsets)
+    - [Consumer Groups](#consumer-groups)
     - [Serialization](#serialization)
 - [Demo Application](#demo-application)
 
@@ -96,16 +96,16 @@ Topics are divided into partitions, allowing for parallel processing and scalabi
 ![Kafka topics](img/kafka_partitions.png)
 ---
 
-### Consumer Groups
-
-Consumer groups allow for parallel and scalable message processing. Consumers within a group coordinate to consume messages from one or more partitions.
-![Kafka topics](img/kafka_consumer_groups.png)
----
-
 ### Offsets
 
 Offsets represent the position of a message within a partition. Consumers use offsets to track their progress and resume processing from the last committed offset.
 ![Kafka topics](img/kafka_offset.png)
+---
+
+### Consumer Groups
+
+Consumer groups allow for parallel and scalable message processing. Consumers within a group coordinate to consume messages from one or more partitions.
+![Kafka topics](img/kafka_consumer_groups.png)
 ---
 
 ### Serialization
